@@ -1,0 +1,15 @@
+Machine.WorkArea.size(xmin=0,xmax=10,ymin=0,ymax=222);
+draw { }
+
+function bool TestIdAssign(){
+    bool b = true;
+    b = numberFunc(true);    /*Error type mismatch*/
+    return a;                /*Error not declared*/
+                             /*Error return type mismatch, not bool*/
+}
+
+
+
+function number numberFunc(bool n){
+return n;   /*Error return type mismatch*/
+}

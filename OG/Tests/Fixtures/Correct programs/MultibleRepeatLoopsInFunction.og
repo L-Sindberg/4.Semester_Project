@@ -1,0 +1,28 @@
+Machine.WorkArea.size(xmin=0,xmax=100,ymin=0,ymax=100);
+
+draw 
+{
+  
+}
+function bool boolFuncA (point a, point b) {
+	point start = (2,2);
+	repeat.until (boolFuncA(a,start)) 
+       point a = (3,3);
+       D;
+    repeat.end
+    repeat.until (boolFuncA(a,start)) 
+        point a = (3,3);
+    repeat.end
+    bool result = dist(a, b) < 6.6;
+    return result;
+}
+
+shape D{
+    point start=(2,2);
+}
+
+
+
+
+
+

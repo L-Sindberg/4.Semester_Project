@@ -1,0 +1,33 @@
+Machine.WorkArea.size(xmin=0,xmax=100,ymin=0,ymax=100);
+
+draw 
+{
+   ShapeA;
+  
+}
+function bool boolFuncA (point a, point b) {
+bool result = false;
+return result;
+}
+
+shape ShapeA  {
+point start = (2,2);
+	repeat.until (boolFuncA(a,start)) 
+       point a = (3,3);
+    repeat.end
+    
+    repeat.until (boolFuncA(a,start)) 
+        point a = (3,3);
+    repeat.end
+    
+}
+
+
+
+
+
+
+
+
+
+

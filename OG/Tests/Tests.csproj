@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit.Console" Version="3.12.0" />
+        <PackageReference Include="NUnit.ConsoleRunner" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OG\OG.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Fixtures\Correct programs\SymbolTable\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Fixtures\Correct programs\SymbolTable\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Fixtures\Correct programs\SymbolTable\**" />
+    </ItemGroup>
+
+</Project>

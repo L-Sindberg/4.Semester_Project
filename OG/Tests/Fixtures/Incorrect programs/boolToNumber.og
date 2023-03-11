@@ -1,0 +1,15 @@
+Machine.WorkArea.size(xmin=0,xmax=10,ymin=0,ymax=222);
+draw { }
+
+function number boolToNumber(number a,bool b){
+bool B = true;
+number N = B;       /*Error type mismatch*/
+a = b;              /*Error type mismatch*/
+N = ABoolianFunc(); /*Error type mismatch*/
+return B;           /*Return type mismatch*/
+
+}
+
+function bool ABoolianFunc(){
+return true;
+} 
